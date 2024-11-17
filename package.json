@@ -29,6 +29,8 @@
   },
   "scripts": {
     "start:front": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "yarn build && yarn server:prod",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
@@ -60,5 +62,6 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage":"https://realtime-codeeditor-6.onrender.com"
 }
