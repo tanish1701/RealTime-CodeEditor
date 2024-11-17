@@ -93,5 +93,5 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.REACT_APP_BACKEND_URL;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
