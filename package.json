@@ -31,7 +31,9 @@
     "start:front": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "yarn build && yarn server:prod",
+    "start:backend": "node server.js",
+    "start:frontend": "serve -s build",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
@@ -45,9 +47,8 @@
     ]
   },
   "engines": {
-  "node": ">=14.0.0"
-},
-
+    "node": "18.x"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -61,7 +62,8 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^3.1.3"
+    "nodemon": "^3.1.3",
+    "concurrently": "^8.2.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
