@@ -64,5 +64,5 @@
   "main": "server.js",
   "author": "",
   "license": "ISC",
-  "build": "react-scripts build --no-source-map""build": "react-scripts build --no-source-map"
+  "build": "react-scripts build --no-source-map"
 }
