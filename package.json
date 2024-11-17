@@ -63,5 +63,6 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "build": "react-scripts build --no-source-map""build": "react-scripts build --no-source-map"
 }
