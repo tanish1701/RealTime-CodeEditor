@@ -44,6 +44,10 @@
       "react-app/jest"
     ]
   },
+  "engines": {
+  "node": ">=14.0.0"
+},
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -62,6 +66,5 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "author": "",
-  "license": "ISC",
-  "homepage":"https://realtime-codeeditor-6.onrender.com"
+  "license": "ISC"
 }
