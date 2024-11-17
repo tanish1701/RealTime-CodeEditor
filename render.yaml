@@ -1,0 +1,4 @@
+runtime: node
+version: 18
+buildCommand: npm run build
+startCommand: npm start
